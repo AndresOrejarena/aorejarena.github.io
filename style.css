@@ -1,0 +1,208 @@
+:root {
+    --bg-color: #f4f6f9;
+    --block-color: #ffffff;
+    --side-color: #1f2937;
+    --abs: #ffffff;
+
+    --text-color: #111827;
+    --text-color-side: #ffffff;
+    --accent-color: #2563eb;
+
+    --shadow-color: rgba(0, 0, 0, 0.8);
+    --shadow-high: rgba(0, 0, 0, 0.2);
+}
+.modoscuro{
+    --bg-color: #0f172a;
+    --block-color: #1e293b;
+    --side-color: #0a071a;
+    --abs: #222222;
+
+    --text-color: #e5e7eb;
+    --text-color-side: #ffffff;
+    --accent-color: #1b3226;
+
+    --shadow-color: rgba(0,0,0,0.5);
+    --shadow-high: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: var(--abs);
+}
+
+
+.contenedor {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-family: 'Inter', "Lucida Grande", serif;
+    font-size: 15px;
+    color: var(--text-color);
+
+    background-color: var(--bg-color);
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px var(--shadow-color);
+}
+
+.BarraLateral {
+    font-family: 'Inter', "Lucida Grande", serif;
+    font-size: 18px;
+    color: var(--text-color-side);
+
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-color: var(--side-color);
+    flex:1 1 auto;
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.fotis {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+
+    width: 90%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.contenido {
+    flex:2 2 auto;
+    padding: 40px;
+    font-family: 'Inter', "Lucida Grande", serif;
+
+}
+
+.principal h1 {
+    font-size: 50px;
+}
+.principal p {
+    font-size: 35px;
+}
+
+.sobre-mi h2{
+    font-size: 30px;
+}
+.sobre-mi p{
+    font-size: 20px;
+}
+
+
+.theme-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: var(--accent-color);
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+
+.chambas {
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    background: var(--block-color);
+    padding: 5px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+.chambas:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow-high);
+}
+
+.experiencia h2 {
+    font-size: 35px;
+}
+.chambas h3 {
+    font-size: 25px;
+}
+.chambas p{
+    font-size: 18px;
+}
+
+.edu-item {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+.idiomas{
+    transition: border-bottom-color 0.4s ease, border-top-color 0.4s ease;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+
+}
+
+.contacto{
+    transition: border-bottom-color 0.4s ease, border-top-color 0.4s ease;
+    border-top: 2px solid var(--accent-color);
+}
+
+.habilidades{
+    transition: border-bottom-color 0.4s ease, border-bottom-color 0.4s ease;
+    border-bottom: 2px solid var(--accent-color);
+
+}
+
+.Footer {
+    margin-top: auto;
+}
+
+
+a{
+    color: orange;
+}
+a:hover {
+    color: yellow;
+}
+
+.contacto h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.idiomas h2{
+    text-align: center;
+    font-size: 35px;
+}
+.idiomas ul{
+    font-size: 18px;
+}
+
+.habilidades ul{
+    font-size: 18px;
+}
+
+.habilidades h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+#secret-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
